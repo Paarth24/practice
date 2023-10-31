@@ -3,7 +3,7 @@ using namespace std;
 #include "test_functions.h"
 
 int main(){
-    int a = 100;
-    max(a);
-    cout << a;
+    int a{10};
+    a = max(&a);
+    cout << a << endl;
 }

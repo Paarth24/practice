@@ -1,5 +1,5 @@
-int max(int a){
-    return (
-        a + 10
+int max(int* a){
+    return(
+        *a + 100
     );
 }
