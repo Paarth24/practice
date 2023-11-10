@@ -1,12 +1,23 @@
 #include <iostream>
-using namespace std;
+#include<bits/stdc++.h> 
+using namespace std; 
+ 
+string sortString(string &str) 
+{ 
+   sort(str.begin(), str.end());
+   return(str); 
+} 
 
-int main() {
-	int t;
-	cin >> t;
-	while(t != 0){
-	    
-	    t = t - 1;
-	}
-	return 0;
-}
+int main(){
+    int c;
+    cin >> c;
+    while(c != 0){ 
+        string s;
+        int n;
+        cin >> n >> s;  
+        cout << sortString(s); 
+
+    }
+
+    return 0; 
+} 
