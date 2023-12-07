@@ -2,9 +2,10 @@
 using namespace std;
 
 template < typename T >
-T& add(T& a, T& b){
+T add(T& a, T& b){
     return(a = a + b);
 }
+
 
 int main(){
 
@@ -13,8 +14,8 @@ int main(){
     double p = 10.5;
     double q = 11.5;
 
-    add(&x,&y);
-    add(&p,&q);
+    add(x,y);
+    add(p,q);
 
     cout << x << endl << p;
 }
