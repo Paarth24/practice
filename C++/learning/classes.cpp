@@ -1,21 +1,13 @@
 #include <iostream> 
 using namespace std; 
-
-class cuboid{
-    public :
-        double length{10};
-        double breadth{20};
-        double height{5};
-    public :
-        double volume(double& a){
-            a = length*breadth*height;
-            return(a);
-        }
-};
+#include "cubiod.h"
 
 int main(){
-    cuboid brick;
-    double vol = 0;
-    brick.volume(vol);
-    cout << vol << endl;
+    cuboid brick1(2,2,10);
+    cout << brick1.volume() << endl;
+    cuboid brick2(1,2,3);
+    cout << brick2.volume() << endl;
+    cuboid brick3;
+    cout << brick3.volume() << endl;
+
 }
